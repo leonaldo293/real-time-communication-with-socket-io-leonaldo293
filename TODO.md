@@ -1,27 +1,40 @@
-# TODO: Implement Complete React Chat Application
+# TODO: Implement Advanced Chat Features
 
-## Steps to Complete
+## Server Updates (server/server.js)
+- [ ] Add file/image sharing event handlers (base64 encoding)
+- [ ] Add message reactions event handlers
+- [ ] Add message delivery acknowledgment
+- [ ] Add read receipts tracking and events
+- [ ] Add pagination support (send messages in chunks)
+- [ ] Add search functionality (server-side filtering)
+- [ ] Improve reconnection handling if needed
 
-- [x] Refactor App.jsx to manage global state (socket, users, rooms, messages, unread counts), connection logic, and render sub-components
-- [x] Create ChatRoom.jsx component for room selection, joining/leaving rooms, and integrating chat interface
-- [x] Create UserList.jsx component (based on Sidebar.jsx) to show online/offline users and handle private message initiation
-- [x] Create Message.jsx component for individual messages with sender, timestamp, and read status
-- [x] Update App.css for responsive design (mobile/desktop)
-- [x] Rename/edit Sidebar.css to UserList.css
-- [x] Update ChatWindow.css to ChatRoom.css
-- [x] Add logic for private messages via unique room names (e.g., 'private-user1-user2')
-- [x] Implement unread message counts per room
-- [x] Add read receipts by emitting 'message_read' events
-- [x] Ensure typing indicators, notification sound, and browser notifications work
-- [x] Test the application by running server and client, verify all features
+## Client Updates (client/src/App.jsx)
+- [ ] Handle new socket events for files, reactions, delivery, read
+- [ ] Add state for reactions, delivery status, search, pagination
+- [ ] Emit events for new features
+- [ ] Improve reconnection logic
 
-## Progress Tracking
-- Refactored App.jsx completed.
-- Created ChatRoom.jsx component.
-- Created UserList.jsx component.
-- Created Message.jsx component.
-- Updated App.css for responsiveness.
-- Created UserList.css.
-- Created ChatRoom.css.
-- Created Message.css.
-- Next: Test the application and make any necessary adjustments.
+## ChatRoom Component (client/src/components/ChatRoom.jsx)
+- [ ] Add file upload button and preview
+- [ ] Add search input for filtering messages
+- [ ] Add "Load more messages" button for pagination
+- [ ] Handle file messages in UI
+
+## Message Component (client/src/components/Message.jsx)
+- [ ] Display reactions and allow adding new ones
+- [ ] Show delivery/read status indicators
+- [ ] Handle file/image display
+
+## CSS Updates
+- [ ] Update ChatRoom.css for new UI elements
+- [ ] Update Message.css for reactions and status
+
+## Testing
+- [ ] Test file sharing
+- [ ] Test reactions
+- [ ] Test pagination
+- [ ] Test delivery acks
+- [ ] Test search
+- [ ] Test read receipts
+- [ ] Test reconnection
